@@ -18,7 +18,7 @@ Widget StudentItem(context, id, schoolStudent) {
                 SizedBox(
                   height: MediaQuery.of(context).size.height / 15,
                   child: const Text(
-                    'Edit Student',
+                    'Edit task',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -29,7 +29,7 @@ Widget StudentItem(context, id, schoolStudent) {
                 TextFormField(
                   controller: MainCubit.get(context).editTextController,
                   decoration: const InputDecoration(
-                    labelText: 'Student Name',
+                    labelText: 'put your Task',
                     border: OutlineInputBorder(),
                   ),
                 ),

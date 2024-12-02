@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:student/cubit/main_cubit.dart';
 import 'package:student/cubit/main_states.dart';
-import 'package:student/student_item.dart';
+import 'package:student/task_item.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MainScreen extends StatelessWidget {
@@ -83,7 +83,7 @@ class MainScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Add Student',
+                            'Add task',
                             style: GoogleFonts.poppins(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -94,7 +94,7 @@ class MainScreen extends StatelessWidget {
                             controller:
                                 MainCubit.get(context).addTextController,
                             decoration: InputDecoration(
-                              labelText: 'Enter Student Name',
+                              labelText: 'Enter task Name',
                               labelStyle: GoogleFonts.poppins(),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12),
